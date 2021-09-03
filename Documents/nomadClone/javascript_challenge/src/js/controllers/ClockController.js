@@ -8,11 +8,7 @@ export default class ClockController {
   }
   init() {
     //TODO 가입시 입력한 위치에 따라 CLOCK_VALUE 설정
-    const testObj = {
-      hours: 1,
-      minutes: 2,
-      seconds: 3,
-    };
+
     this.ClockView.clockWorking(CLOCK_VALUE.USA);
   }
 }
