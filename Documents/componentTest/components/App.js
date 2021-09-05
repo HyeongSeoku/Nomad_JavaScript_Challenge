@@ -52,11 +52,12 @@ class App extends Component {
     });
     this.renderComponent();
     this.$target.appendChild(this.$element);
-    console.log("App State ", this.state);
+    console.log("App State ", this.state, "props", this.props);
   }
 
   render() {
     this.tResult.setState({ data: this.state.data });
+    console.log("App State ", this.state, "props", this.props);
   }
 }
 

@@ -1,0 +1,8 @@
+@import "../css/modules/style.css";
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}

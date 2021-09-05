@@ -4,12 +4,12 @@ class Loading extends Component {
   constructor(props) {
     super(props);
 
+    this.$element.className = "Modal Loading";
     this.$target.appendChild(this.$element);
     this.renderComponent();
   }
 
   render() {
-    console.log(this.state);
     const { isLoading } = this.state;
     this.$element.innerHTML = `
             <div class="content">

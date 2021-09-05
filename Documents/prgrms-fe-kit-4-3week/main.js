@@ -1,14 +1,15 @@
 import App from "./src/Components/App.js";
 
-const app = document.querySelector("#App");
+const app = document.querySelector("#Main");
 
 new App({
   $target: app,
   tagName: "main",
-  className: "App",
-  initialState: [
-    {
-      node: [],
-    },
-  ],
+  initialState: {
+    isLoading: false,
+    isRoot: false,
+    node: [],
+    depth: [],
+    selectedFile: [],
+  },
 });
